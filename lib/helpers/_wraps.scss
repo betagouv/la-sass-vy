@@ -1,0 +1,35 @@
+.wrap-1,
+.wrap-2,
+.wrap-3,
+.wrap-4,
+.wrap-5 {
+  @extend .flex-wrapper;
+}
+
+.wrap-1 > *,
+.wrap-2 > *,
+.wrap-3 > *,
+.wrap-4 > *,
+.wrap-5 > * {
+  flex: 0 0 auto;
+}
+
+.wrap-1 > * {
+  width: 100%;
+}
+
+.wrap-2 > * {
+  width: 50%;
+}
+
+.wrap-3 > * {
+  width: 33.333333%;
+}
+
+.wrap-4 > * {
+  width: 25%;
+}
+
+.wrap-5 > * {
+  width: 12.5%;
+}

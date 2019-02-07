@@ -1,0 +1,34 @@
+.is-absolute {
+  position: absolute;
+}
+
+.is-relative {
+  position: relative;
+}
+
+$positionIntSizes: () !default;
+
+@each $positionIntSize in $positionIntSizes {
+  $sides: (all, topbottom, leftright, top, left, right, bottom);
+
+  // convert value to SASS variables with unit
+  $pixelValue: number-to-pixel($positionIntSize);
+
+  @each $side in $sides {
+    .l#{$positionIntSize} {
+      @include rem(left, $pixelValue);
+    }
+
+    .r#{$positionIntSize} {
+      @include rem(right, $pixelValue);
+    }
+
+    .t#{$positionIntSize} {
+      @include rem(top, $pixelValue);
+    }
+
+    .b#{$positionIntSize} {
+      @include rem(bottom, $pixelValue);
+    }
+  }
+}

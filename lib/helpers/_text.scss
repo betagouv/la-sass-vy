@@ -1,0 +1,117 @@
+$textIntSizes: () !default;
+
+@each $textIntSize in $textIntSizes {
+  $pixelValue: number-to-pixel($textIntSize);
+
+  .fs#{$textIntSize} {
+    @include font-size-to-rem($pixelValue);
+  }
+}
+
+/* ------------------------------------------------
+
+ Helpers:
+ - color
+ - style
+ - align
+
+------------------------------------------------ */
+
+/* ------ ALIGN */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ------ COLORS */
+
+.is-grey-text {
+  color: $grey;
+}
+
+.is-dark-grey-text {
+  color: $grey-dark;
+}
+
+.is-white-text,
+a.is-white-text,
+a.is-white-text:hover {
+  color: $white;
+}
+
+.is-black-text {
+  color: $black;
+}
+
+.is-primary-text,
+a.is-primary-text,
+a.is-primary-text:hover {
+  color: $primary;
+}
+
+/* ------ WEIGHT */
+// https://fonts.google.com/specimen/Barlow?selection.family=Barlow:300
+.is-light {
+  font-weight: 300;
+}
+
+.is-normal,
+.is-regular {
+  font-weight: 400;
+}
+
+.is-medium {
+  font-weight: 500;
+}
+
+.is-semi-bold {
+  font-weight: 600;
+}
+
+.is-bold {
+  font-weight: 700;
+}
+
+.is-extra-bold {
+  font-weight: 800;
+}
+
+/* ------ STYLE */
+.is-italic {
+  font-style: italic;
+}
+
+.is-uppercase {
+  text-transform: uppercase;
+}
+
+.is-underline,
+a.is-underline,
+a:link.is-underline {
+  text-decoration: underline;
+}
+
+.is-lowercase {
+  text-transform: lowercase;
+}
+
+.is-capitalized {
+  // capitalize each words first letter
+  text-transform: capitalize;
+}
