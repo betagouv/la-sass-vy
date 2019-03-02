@@ -1,7 +1,6 @@
 
 .DS_store
 .git
-lib/
 node_modules/
 shared
 
