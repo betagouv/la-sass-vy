@@ -8,11 +8,12 @@
     "stylelint-order": "^0.8.1",
     "stylelint-scss": "^3.2.0"
   },
+  "license": "Mozilla Public License",
   "main": "lib/index.scss",
   "name": "la-sass-vy",
   "private": false,
   "scripts": {
     "precommit": "./scripts/precommit.sh"
   },
-  "version": "0.0.3"
+  "version": "1.0.0"
 }
