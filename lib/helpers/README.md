@@ -1,4 +1,3 @@
-Tout est exprimé en pixel !
 Sucre syntaxique, ex:
 
 ```css
@@ -12,3 +11,5 @@ devient
 ```js
 <span className='mb3' />
 ```
+
+* Attention, tout est exprimé en pixel !
