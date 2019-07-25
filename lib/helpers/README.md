@@ -1,4 +1,4 @@
-Sucre syntaxique, ex:
+Sucre syntaxique. Par ex:
 
 ```css
 .maClass {
