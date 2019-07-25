@@ -12,4 +12,4 @@ devient
 <span className='mb3' />
 ```
 
-* Attention, tout est exprimé en pixel !
+> Attention, tout est exprimé en pixel !
