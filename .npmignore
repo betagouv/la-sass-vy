@@ -1,2 +1,2 @@
-doc/
-examples/
+.stylelintrc.json
+precommit.sh
